@@ -1,8 +1,6 @@
 import { GitHubIssuePayload, GitHubStarPayload } from "../../interfaces";
 
 export class GitHubService {
-  constructor() {}
-
   onStar(payload: GitHubStarPayload): string {
     let message: string = "";
     const { starred_at, sender, repository, action } = payload;

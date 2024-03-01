@@ -3,7 +3,6 @@ import { environment } from "../../config";
 export class DiscordService {
   private readonly discordWebhookUrl: string = environment.DISCORD_WEBHOOK_URL;
 
-  constructor() {}
   async notify(message: string) {
     const body = {
       content: message,
